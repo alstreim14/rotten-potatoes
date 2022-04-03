@@ -33,7 +33,7 @@ jobs:
           method: kubeconfig
           kubeconfig: ${{ secrets.K8S_KUBECONFIG }}
      - name: Azure Kubernetes set context
-       uses: Azure/aks-set-context@v2.1
+       uses: Azure/k8s-set-context@v2.1
        with:
         images: 
           alstreim14/rotten-potatoes:${{ github.run_number }}
